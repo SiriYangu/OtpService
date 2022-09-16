@@ -1,0 +1,38 @@
+server:
+  port: 9090
+
+
+mpesa:
+  otp:
+    api-key: d526d554c1818484cf331217b4f57c99
+    otp-len: 4
+    sender-id: SIRI YANGU
+    username: adstreet
+    message: hello
+    smsurl: http://bulksms.mobitechtechnologies.com/api/sendsms
+
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+  h2:
+    console.enabled: true
+
+
+
+
+
+
+
+
+
+#  api_key":"d526d554c1818484cf331217b4f57c99",
+#"username":"adstreet",
+#"sender_id":"SIRI YANGU",
+#"message":"Dear Customer, we are carrying out a scheduled system maintenance. Our services will resume shortly. We regret any inconvenience caused. For queries, please call +254110652438  or email customerservice@siri-app.com. PRIVPAY, NUMBER YAKO NI SIRI YAKO",
+#"phone":"254705916511"
